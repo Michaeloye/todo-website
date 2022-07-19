@@ -11,6 +11,8 @@ The project features an Input field to allow the user easily add tasks the Todo 
 
 Live link: [**Todo Website**](https://todo-website-michaeloye.vercel.app/)
 
+The Inspiration for UI design came from [mozilla](https://developer.mozilla.org/en-US/)
+
 # Technonlogies & API
 - [ReactJS](https://reactjs.org/)
 - [NextJS](https://nextjs.org/)
