@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 
 function Form(props) {
-  const [name, setName] = useState("");
+  const [title, setTitle] = useState("");
 
   function handleChange(e) {
-    setName(e.target.value);
+    setTitle(e.target.value);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     try {
-      if (!name) throw Error("An empty task cannot be assigned");
-      else props.addTask(name);
+      if (!title) throw Error("An empty task cannot be assigned");
+      else props.addTask(title);
     } catch (err) {
       console.log(err);
     }
-    setName("");
+    setTitle("");
   }
   useEffect(() => {
     document.title = "Todo";
@@ -33,7 +33,7 @@ function Form(props) {
         className="input input__lg"
         name="text"
         autoComplete="off"
-        value={name}
+        value={title}
         onChange={handleChange}
       />
       <button type="submit" className="btn btn__primary btn__lg">
