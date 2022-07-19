@@ -15,17 +15,10 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
-const DATA = [
-  { id: "0", title: "Eat", completed: true },
-  { id: "1", title: "sleep", completed: false },
-  { id: "2", title: "Repeat", completed: false },
-];
-
 // page
-export default function Home({ todos = DATA }) {
+export default function Home({ todos }) {
   const [tasks, setTasks] = useState(todos);
   const [filter, setFilter] = useState("All");
-  console.log(todos);
   const listHeadingRef = useRef(null);
 
   const prevTaskLength = usePrevious(tasks.length);
@@ -118,8 +111,32 @@ export default function Home({ todos = DATA }) {
         </ul>
       </div>
       <footer>
-        Made by <a href="https://github.com/Michaeloye">Oyebadejo Michael</a>✌️
+        Made by{" "}
+        <a href="https://github.com/Michaeloye" target="blank">
+          {" "}
+          Oyebadejo Michael
+        </a>
+        ✌️
       </footer>
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  try {
+    const data = await axios.get("https://jsonplaceholder.typicode.com/todos");
+    return {
+      props: {
+        // get only todos equivalent to userId = 1
+        todos: data.data.filter((datum) => datum.userId === 1),
+      },
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      props: {
+        todos: [],
+      },
+    };
+  }
+};
