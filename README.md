@@ -29,7 +29,7 @@ Live link: [**Todo Website**](https://todo-website-michaeloye.vercel.app/)
 # Table of contents
 
 - [Project Title](#todo-website)
-- [Technonlogies & API](#technologies--api)
+- [Technologies & API](#technologies--api)
 - [Web Preview](#web-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
