@@ -1,5 +1,3 @@
-![Banner](https://github.com/Michaeloye/pexels-clone/blob/main/pixabay-banner.png)
-
 # Todo Website
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/michaeloye/pexels-clone)
