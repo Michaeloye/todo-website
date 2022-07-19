@@ -89,7 +89,7 @@ export default function Home({ todos }) {
       <Head>
         <title>Todo Website</title>
         <meta name="description" content="A Todo website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="todoapp stack-large">
