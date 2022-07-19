@@ -216,6 +216,9 @@ body {
 .todo > * {
   flex: 0 0 100%;
 }
+.todo-label {
+  font-size: 1.8rem !important;
+}
 .todo-text {
   width: 100%;
   min-height: 4.4rem;
