@@ -13,7 +13,7 @@ Live link: [**Todo Website**](https://todo-website-michaeloye.vercel.app/)
 
 The Inspiration for UI design came from [mozilla](https://developer.mozilla.org/en-US/)
 
-# Technonlogies & API
+# Technologies & API
 - [ReactJS](https://reactjs.org/)
 - [NextJS](https://nextjs.org/)
 - [Axios](https://axios-http.com/docs/intro)
@@ -29,7 +29,7 @@ Live link: [**Todo Website**](https://todo-website-michaeloye.vercel.app/)
 # Table of contents
 
 - [Project Title](#todo-website)
-- [Technonlogies & API](#technologies-&-api)
+- [Technonlogies & API](#technologies--api)
 - [Web Preview](#web-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
